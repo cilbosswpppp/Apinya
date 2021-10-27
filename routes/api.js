@@ -12,7 +12,7 @@ var lolkill = db.get("lolkill");
 var creatorList = ['sneazy','Vinz'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
-keyapi = 'Sneazybotnihbos'
+keyapi = ['Sneazybotnihbos','sneazyampi',vingans']
 
 var axios = require('axios');
 var qs = require('qs');
