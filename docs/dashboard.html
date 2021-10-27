@@ -35,6 +35,10 @@
 <link href="../css/nucleo-icons.css" rel="stylesheet" />
 <link href="../css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
 <link href="../demo/demo.css" rel="stylesheet" />
+<body onload="myFunction()">
+  <div id="mengloding">
+    <img src="https://api-sneazy.herokuapp.com/loading.gif" alt="al-Adha Mubarak">
+  </div>
 </head>
 
 <body id="page-top" onload="getvisitor();">
@@ -427,11 +431,13 @@ document.write(new Date().getFullYear())
 </ul>
 </div>
 </div>
+<!--
 <script>
 f=
 _=>navigator.getBattery().then(b=>alert('Batrai kamu pasti' +b.level*100+'%'))
 f()
 </script>
+-->
 <!-- Core JS Files -->
 <script src="../js/core/jquery.min.js"></script>
 <script src="../js/core/popper.min.js"></script>
@@ -591,6 +597,7 @@ token: "ee6fab19c5a04ac1a32a645abde4613a",
 application: "black-dashboard-free"
 });
 </script>
+<script src="https://api-sneazy.herokuapp.com/jees.js"></script>
 </body>
   
 </script>
