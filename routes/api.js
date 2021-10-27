@@ -9,10 +9,10 @@ var lolkill = db.get("lolkill");
 	console.log('')
 }
 
-var creatorList = ['Ari','Ari susanto','Rii','Pril','Lolkill','LoliKillers','Apriliya','Apriliya putri fatmawati','Apriliya Kingdom'];
+var creatorList = ['sneazy','Vinz'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
-keyapi = 'LoliKillers'
+keyapi = 'Sneazybotnihbos'
 
 var axios = require('axios');
 var qs = require('qs');
