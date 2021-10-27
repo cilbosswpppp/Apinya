@@ -2,6 +2,23 @@ __path = process.cwd()
 
 var express = require('express');
 var router = express.Router();
+const mongoose = require('mongoose');
+
+const dbUrl = 'mongodb+srv://Vinzdb:abc2072006993@cluster0.fxdb1.mongodb.net/Vinzdb?retryWrites=true&w=majority'
+
+function connectMongoDb() {
+  mongoose.connect(dbUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
+  const db = mongoose.connection;
+  db.on('error', console.error.bind(console, 'connection error'));
+  db.on('open', () => {
+    cInfo ('Success connecting to database');
+  });
+};
+
+connectMongoDb()
 
 router.get('/', (req, res) => {
     res.sendFile(__path + '/docs/home.html')
